@@ -1,0 +1,62 @@
+firstly you install npm init -y
+then you can change the name given to you by pakage.json ten create a folder for it... e.g App.json
+
+then npm i express
+
+then Nodemon 
+npm i nodemon --save--dev
+
+inside your pakage.json
+beneat the test... you write    1,
+ "start": "node app.js",
+    "dev" : "nodemon app.js"
+
+
+    (very important)
+    create a file called .gitignore
+    then type node_modules
+
+    how establish a connection between MongoDb and the database
+    First we build our simple server in app.js
+    const express = require('express')
+const app = express()
+const PORT = 3000
+
+
+
+then Listen function in other to run your npm run dev
+
+app.listen(PORT, () =>{
+    console.log(server running on port: ${PORT});
+    
+});
+
+next we need to create our route and error route
+
+
+Enviromental variable helps to protect sensitive information and to protect them we need to install npm i dotenv
+
+
+mongoose help in installing and connecting to database 
+mongoose is a framework of mongo Db that allow us to write mongod easily
+its allow you to build your schema
+schema define how each document os going to loook like
+also provides the sturctue on how unique you want your data collection to look llike
+
+schema permit some data type such as strings, array, boolean, 
+
+before writing schema - you need a create a schema
+inside the fileExplorer, you create a file named MODELS
+
+
+
+majourity is what you woukd be creating in youe backend, would be develpoed yourself
+
+MVC ARCHITECTURE
+- THIS IS A PATTER USED TO WRITE BACKENDS
+
+MODELS -this is where we build our schema
+controller
+routes - this helps to create the access to the controller, and give adress to 
+
+CORS is a pakage that allow you bypass and  It's a mechanism that allows a web page to access resources from a different domain than the one that served the page.
